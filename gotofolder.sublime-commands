@@ -1,0 +1,4 @@
+[
+	{"caption": "GoTo Folder: Explorer", "command": "go_to_folder", "args": {"path": "$file", "open": "explorer"}},
+	{"caption": "GoTo Folder: Shell", "command": "go_to_folder", "args": {"path": "$file", "open": "shell"}}
+]
