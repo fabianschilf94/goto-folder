@@ -7,19 +7,44 @@
 #
 ####################
 
-import sublime, sublime_plugin
+import sublime, sublime_plugin, os
 
 class GoToFolderCommand(sublime_plugin.WindowCommand):
 
-	def run(self):
+	def run(self, **kwargs):
 
-		self._path = None
-		self._active_view = None
+		# setting global vars
+		self.args = sublime.load_settings("gotofolder.sublime-settings")
+		self.folder = self.window.extract_variables()["file_path"]
+		self.shell = None
+
+		# check if custom shell is set
+
+		# | added if shell issue is fixed | 
+		# if self.args.get("shell_path"):
+		# 	self.shell = self.args.get("shell_path")
+
+		# check if sidebar was clicked
+		if "paths" in kwargs:
+			self.folder = kwargs["paths"][0]
+		
+		# open folder in file manager
+		if kwargs["open"] == "file_manager":
+			self.open_in_file_manager()
+
+		# open folder in default shell or given shell in settings
+		if kwargs["open"] == "shell":
+			self.open_in_shell()
+
+		
 
 
-	def get_target_path(self):
-		pass
+	def open_in_file_manager(self):
+		if os.path.isdir(self.folder):
+			self.window.run_command("open_dir", {"dir": self.folder})
+		else:
+			sublime.error_message("Could not find {}".format(self.folder))
 
 
-	def check_target_path(self):
+	def open_in_shell(self):
 		pass
