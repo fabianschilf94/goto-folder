@@ -1,0 +1,14 @@
+[
+	{
+		"caption": "Goto",
+		"id": "goto",
+		"children": 
+		[
+			{
+				"caption": "Goto Folder",
+				"command": "go_to_folder",
+				"args": {"file_path": "${file_path}", "open": "file_manager"}
+			},
+		]
+	}
+]
