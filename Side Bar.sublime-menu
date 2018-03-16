@@ -3,6 +3,6 @@
 		"caption": "Goto Folder",
 		"id": "go_to_folder",
 		"command": "go_to_folder",
-		"args": {"file_path": "${folder}", "open": "file_manager", "paths": []}
+		"args": {"file_path": "${folder}", "paths": []}
 	},
 ]
