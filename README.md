@@ -23,7 +23,7 @@ $ git clone https://github.com/screamingsnake/goto-folder.git
 
 ### Manual
 
-* Download a [releases](https://github.com/screamingsnake/goto-folder/releases) .zip archive
+* Download a [releases](https://github.com/sawzcode/goto-folder/releases) .zip archive
 * Unzip the archive
 * Change the extracted folder name to `Goto Folder`
 * Open the Sublime Text `Packages` directory with `Preferences > Browse Packages`
