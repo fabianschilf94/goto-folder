@@ -18,12 +18,12 @@ A Sublime Text 3 plugin that opens selected file or folder in your filemanager
 * Open the Sublime Text `Packages` directory with `Preferences > Browse Packages`
 * From inside the `Packages` directory, clone the repository: 
 ```bash
-$ git clone https://github.com/screamingsnake/goto-folder.git
+$ git clone https://github.com/pr0grammr/goto-folder.git
 ```
 
 ### Manual
 
-* Download a [releases](https://github.com/sawzcode/goto-folder/releases) .zip archive
+* Download a [releases](https://github.com/pr0grammr/goto-folder/releases) .zip archive
 * Unzip the archive
 * Change the extracted folder name to `Goto Folder`
 * Open the Sublime Text `Packages` directory with `Preferences > Browse Packages`
